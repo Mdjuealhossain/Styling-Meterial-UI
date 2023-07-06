@@ -1,6 +1,10 @@
-import { createTheme } from '@mui/material'
+
+"use client"
+import { ThemeProvider, createTheme } from '@mui/material'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import {theme} from "./ThemingContainet/createTheme"
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,22 +19,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-const theme=createTheme({
-  palette:{
-    primary:{
-      main:"#ff00ff"
-    }
-  },
 
-
-})
 
 
 
 
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider theme={theme}><body className={inter.className}>{children}</body></ThemeProvider>
+      
     </html>
   )
 }
