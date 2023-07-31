@@ -14,11 +14,13 @@ import FlButton from "./MuiStuleComponents/FAB/index";
 import ListMui from "./MuiStuleComponents/List/index";
 import { Box } from "@mui/material";
 import SignIn from "./TemplateMui/SignIn";
+import SignInSide from "./TemplateMui/signIn-Side";
+import GridCom from "./MuiStuleComponents/GridCompon";
 
 export default function Home() {
   return (
     <Box>
-      <SignIn></SignIn>
+      <SignInSide></SignInSide>
     </Box>
   );
 }
