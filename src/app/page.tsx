@@ -15,12 +15,13 @@ import ListMui from "./MuiStuleComponents/List/index";
 import { Box } from "@mui/material";
 import SignIn from "./TemplateMui/SignIn";
 import SignInSide from "./TemplateMui/signIn-Side";
-import GridCom from "./MuiStuleComponents/GridCompon";
+import Dashboard from "./TemplateMui/Deshboard/Deshboard";
+// import GridCom from "./MuiStuleComponents/GridCompon";
 
 export default function Home() {
   return (
     <Box>
-      <SignInSide></SignInSide>
+      <Dashboard></Dashboard>
     </Box>
   );
 }
