@@ -90,8 +90,8 @@ export const components = {
         styleOverrides: {
             root: ({ theme, ownerState }) => ({
                 minWidth: 64,
-                padding: '6px 20px',
-                borderRadius: "5px"
+                padding: '10px 20px',
+                borderRadius: "5px",
 
             }),
             outlined: ({ theme }) => ({
@@ -107,7 +107,8 @@ export const components = {
     MuiButtonGroup: {
         styleOverrides: {
             root: ({ theme, ownerState }) => ({
-                borderRadius: 11
+                borderRadius: 11,
+              
             }),
 
             outlined: ({ theme }) => ({
