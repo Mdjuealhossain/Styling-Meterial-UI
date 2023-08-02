@@ -16,12 +16,13 @@ import { Box } from "@mui/material";
 import SignIn from "./TemplateMui/SignIn";
 import SignInSide from "./TemplateMui/signIn-Side";
 import Dashboard from "./TemplateMui/Deshboard/Deshboard";
+import ReChart from "./TemplateMui/Deshboard/ReChartPrac";
 // import GridCom from "./MuiStuleComponents/GridCompon";
 
 export default function Home() {
   return (
     <Box>
-      <Dashboard></Dashboard>
+      <ReChart></ReChart>
     </Box>
   );
 }
