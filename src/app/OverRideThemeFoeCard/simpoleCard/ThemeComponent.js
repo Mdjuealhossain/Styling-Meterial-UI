@@ -256,6 +256,62 @@ export const components = {
                 paddingRight: 48
             })
         }
+    },
+    MuiListItemButton:{
+        styleOverrides:{
+            root:({theme})=>({
+              
+             
+                minWidth: 0,
+                boxSizing: 'border-box',
+                textAlign: 'left',
+                paddingTop: 6,
+                paddingBottom: 6,
+            }),
+            gutters:({theme})=>({
+                paddingLeft: 18,
+                paddingRight: 18
+            })
+        }
+    },
+        
+    MuiListItemIcon:{
+        styleOverrides:{
+            root:({theme})=>({
+                minWidth: 56,
+                flexShrink: 0,
+                display: 'inline-flex',
+                color:theme.palette.grey[800]
+            }),
+            alignItemsFlexStart:({theme})=>({
+                marginTop: 8
+            })
+        }
+    },
+    MuiListItemText:{
+        styleOverrides:{
+            root:({theme})=>({
+                flex: '1 1 auto',
+                minWidth: 0,
+                marginTop: 6,
+                marginBottom: -6
+            }),
+            multiline:({theme})=>({
+                marginTop: 8,
+                marginBottom: 8
+            }),
+            inset:({theme})=>({
+                paddingLeft: 57
+            }),
+            primary:({theme})=>({
+                ...theme.typography.h6
+            }),
+            secondary:({theme})=>({
+                ...theme.typography.subtitle1,
+                color:theme.palette.grey[500]
+            })
+        }
     }
+
 
 }
