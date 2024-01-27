@@ -1,17 +1,7 @@
-"use client";
-import { Grid, List, ThemeProvider, createTheme } from "@mui/material";
-import "./globals.css";
+import { Grid, ThemeProvider } from "@mui/material";
 import { Inter } from "next/font/google";
 import { theme } from "./ThemingContainet/createTheme";
 import SidNav from "./SidNavbar/index";
-import Divider from "@mui/material/Divider";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import {
-  mainListItems,
-  secondaryListItems,
-} from "./TemplateMui/Deshboard/ListItem";
 
 const inter = Inter({ subsets: ["latin"] });
 

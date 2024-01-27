@@ -1,6 +1,4 @@
-
-// for button start here
-
+"use client"
 import { createTheme } from "@mui/material";
 import { palette } from "./palette"
 import { shadows } from "./boxshadow"
